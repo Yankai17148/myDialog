@@ -1,0 +1,74 @@
+body, html{
+	margin:0;
+	padding:0;
+	height:100%;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+.bounding-box{
+	position: fixed;
+	background-color: #fff;
+	box-shadow: 0px 0px 12px rgba(0,0,0,.3);
+	text-align: center;
+	box-sizing:border-box;
+	z-index: 99;
+	opacity: 0;
+}
+.bounding-box .bounding-box-header{
+	width: 100%;
+	height: 20px;
+	line-height: 20px;
+	font-size: 12px;
+	text-align: left;
+	padding-left: 10px;
+	background-color: #f5f5f5;
+	color:#666;
+}
+.bounding-box .bounding-box-main{
+	padding:10px;
+	min-height:100px;
+}
+.bounding-box .submit-btn{
+	position: absolute;
+	right:15px;
+	bottom:15px;
+	padding:5px 15px;
+	border:0;
+	background-color: #6cbd4a;
+	color:#fff;
+	font-size: 12px;
+	text-align: center;
+	transition:all .3s;
+	cursor: pointer;
+	outline:none;
+}
+.bounding-box .submit-btn:hover{
+	background-color: #5fa840;
+}
+
+.dialog-mask{
+	position: absolute;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,.4);
+	z-index: 98;
+	display: none;
+}
+i.close-btn{
+	position: absolute;
+	top:1px;
+	right:10px;
+	font-style: normal;
+	font-size: 14px;
+	color:#666;
+	font-family: Arial;
+	cursor: pointer;
+}
+i.close-btn:hover{
+	color:#0180cf;
+}
