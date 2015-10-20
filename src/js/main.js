@@ -32,3 +32,4 @@ require(['jquery', 'dialog'], function($, d) {
 		})
 	});
 })
+
